@@ -5,9 +5,12 @@
 echo "Checking for newer files online first"
 git pull
 
-#cd x86_64
+cd x86_64
 
 #sh update.sh
+
+repo-add --verify --sign isis.db.tar.gz *.pkg.tar.zst
+cd ..
 
 # Below command will backup everything inside the project folder
 git add --all .
