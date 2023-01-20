@@ -2,11 +2,11 @@
 #set -e
 
 # checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
+# echo "Checking for newer files online first"
+# git pull
 
 repo-add -n -s -v x86_64/isis.db.tar.gz x86_64/*.pkg.tar.zst
-# rm x86_64/*.old*
+rm x86_64/*.old*
 
 # Below command will backup everything inside the project folder
 git add --all .
